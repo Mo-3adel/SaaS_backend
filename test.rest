@@ -1,0 +1,38 @@
+POST http://127.0.0.1:8000/auth/register/
+Content-Type: application/json
+
+{
+    "username": "testuser3",
+    "email": "testuser3@example.com",
+    "password": "password9923"
+}
+
+###
+
+POST http://127.0.0.1:8000/auth/login/
+Content-Type: application/json
+
+{
+    "username": "testuser3",
+    "password": "password9923"
+}
+
+###
+POST http://127.0.0.1:8000/auth/logout/
+Content-Type: application/json
+Authorization: Token dd8f9fcda288b02316777e642a6098638ceaa906
+
+{}
+
+### Upload a File (PDF, DOCX, TXT, Image)
+POST http://127.0.0.1:8000/uploads/uploads/
+
+Content-Type: multipart/form-data; boundary=MyBoundary
+
+--MyBoundary
+Content-Disposition: form-data; name="file"; filename="Yassin MA G77 mar.pdf"
+
+Content-Type: application/pdf
+
+< /Users/unexist/Downloads/Yassin\ MA\ G77\ mar.pdf
+--MyBoundary--
