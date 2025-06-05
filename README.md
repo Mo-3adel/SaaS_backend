@@ -49,21 +49,21 @@ This is the backend for a SaaS application that enables users to upload document
 python -m venv venv
 source venv/bin/activate  # or .\venv\Scripts\activate on Windows
 
-###2.Install dependencies
+### 2.Install dependencies
 pip install -r requirements.txt
 
-###3. Configure your API key
+### 3. Configure your API key
 In config.py, add your Google Gemini API key:
 
 GEMINI_API_KEY = "your-api-key-here"
 
-###4. Apply migrations
+### 4. Apply migrations
 python manage.py migrate
 
-###5. Run the development server
+### 5. Run the development server
 python manage.py runserver
 
-##🔌 API Endpoints
+## 🔌 API Endpoints
 | Method | Endpoint                           | Description                           |
 | ------ | ---------------------------------- | ------------------------------------- |
 | `POST` | `/auth/register/`                  | Register a new user                   |
