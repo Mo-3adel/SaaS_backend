@@ -30,12 +30,19 @@ This is the backend for a SaaS application that enables users to upload document
 ## 🧱 Project Structure
 
 📁 backend/
+
 ├── backend/ # Django settings and URL config
+
 ├── uploads/ # File upload, extraction, AI, and PowerPoint logic
+
 ├── userbase/ # User authentication and serializers
+
 ├── media/ # Uploaded files and generated .pptx files
+
 ├── config.py # API key settings (Google Gemini)
+
 ├── manage.py # Django management script
+
 └── README.md
 
 
