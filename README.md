@@ -45,7 +45,7 @@ This is the backend for a SaaS application that enables users to upload document
 
 ### 1. Create & activate a virtual environment
 
-```bash
+bash
 python -m venv venv
 source venv/bin/activate  # or .\venv\Scripts\activate on Windows
 
@@ -72,7 +72,7 @@ python manage.py runserver
 | `GET`  | `/media/generated_pptx/<filename>` | Download generated PowerPoint         |
 
 
-##📁 Notes
+## 📁 Notes
 
 All uploaded and generated files are stored in the media/ folder.
 Ensure your Google Gemini API key is properly set in config.py.
@@ -81,7 +81,7 @@ Use cloud storage for media
 Secure API keys using environment variables
 Add authentication and permissions
 
-##📄 License
+## 📄 License
 
 This project is licensed under the MIT License.
 Feel free to fork, use, and extend it!
